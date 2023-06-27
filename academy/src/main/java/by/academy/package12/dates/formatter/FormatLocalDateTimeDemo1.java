@@ -9,7 +9,6 @@ public class FormatLocalDateTimeDemo1 {
         DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("MMMM dd, yyyy HH:mm:ss");
         LocalDateTime localDateTime = LocalDateTime.parse("June 05, 2000 12:10:56", formatter1);
         System.out.println(localDateTime);
-        LocalDateTime.
         DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MMMM d, yyyy");
         LocalDate localDate = LocalDate.parse("June 5, 2018", formatter2);
         System.out.println(localDate);
