@@ -19,7 +19,7 @@ public class HashSetDemo {
 
 		System.out.println(hashSet);
 
-//		WrongHashCat c1 = new WrongHashCat("cat1");
+//		WrongHashCat c1 = new WrongHashCat("cat1");T
 //		WrongHashCat c2 = new WrongHashCat("cat2");
 //		WrongHashCat c3 = new WrongHashCat("cat3");
 //		WrongHashCat c4 = new WrongHashCat("cat4");

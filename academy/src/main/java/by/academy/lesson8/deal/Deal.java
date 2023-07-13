@@ -1,9 +1,10 @@
 package by.academy.lesson8.deal;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Objects;
 
-public class Deal {
+public class Deal implements Iterable<Product> {
 
 	String address;
 	User buyer;
@@ -88,6 +89,30 @@ public class Deal {
 	public String toString() {
 		return "Deal [address=" + address + ", buyer=" + buyer + ", seller=" + seller + ", products="
 				+ Arrays.toString(products) + "]";
+	}
+
+	@Override
+	public Iterator<Product> iterator() {
+		
+		return new Iterator<Product>() {
+
+			private int index;
+
+			@Override
+			public boolean hasNext() {
+				if (products == null || products.length <= index) {
+					return false;
+				}
+
+				return products[index] != null;
+			}
+
+			@Override
+			public Product next() {
+				return products[index++];
+			}
+
+		};
 	}
 
 }

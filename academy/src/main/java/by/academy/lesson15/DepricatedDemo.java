@@ -1,4 +1,4 @@
-package by.academy.package15;
+package by.academy.lesson15;
 
 @Version(info = "", age = 0, defaultParam = "ololo")
 public class DepricatedDemo {
